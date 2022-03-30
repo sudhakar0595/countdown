@@ -1,0 +1,19 @@
+let arr = [1,0,1,1,0,0,0];
+let index = 0;
+let count = arr.length;
+console.log(count);
+while(index < 7)
+  {
+    if(arr[index] == 1)
+      {
+        arr.splice(index,1);
+    	count = count-2;
+    	arr.splice(count,0,1);
+        count = count+2;
+      }
+    else
+      {
+        index++;
+      }
+  }
+console.log(arr);
